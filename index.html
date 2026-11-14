@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide utilisateur – ConvertAISimple pour Mac</title>
+<meta name="description" content="Guide utilisateur de ConvertAISimple : convertir des vidéos et des DVD en 1080P ou 4K sur Mac, réglages, IA qualité, assistant IA, Remote iPhone.">
+<style>
+  :root {
+    --ink: #14181f;
+    --muted: #5b6573;
+    --line: #e3e7ee;
+    --soft: #f4f7fa;
+    --accent: #0a8fb3;
+    --accent-soft: #e3f5fa;
+    --warn-soft: #fff4e0;
+    --warn: #9a5b00;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: #fff;
+  }
+  header.cover {
+    background: #0e1116;
+    color: #fff;
+    padding: 56px 24px 44px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  header.cover .eyebrow {
+    color: #46d3f5;
+    font-weight: 800;
+    letter-spacing: .14em;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  header.cover h1 { font-size: 40px; line-height: 1.15; margin: 10px 0 12px; font-weight: 800; }
+  header.cover p { color: #c9d1db; margin: 0; max-width: 640px; }
+  main { padding: 8px 24px 64px; }
+  h2 {
+    font-size: 27px;
+    margin: 56px 0 12px;
+    padding-top: 8px;
+    border-top: 2px solid var(--ink);
+  }
+  h3 { font-size: 20px; margin: 30px 0 8px; }
+  p { margin: 0 0 14px; }
+  ul, ol { margin: 0 0 16px; padding-left: 24px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  kbd {
+    font-family: inherit;
+    font-size: 15px;
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-bottom-width: 2px;
+    border-radius: 6px;
+    padding: 1px 7px;
+    white-space: nowrap;
+  }
+  .ui { font-weight: 700; }
+  .box {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 18px 0;
+  }
+  .box.warn { background: var(--warn-soft); border-left-color: var(--warn); }
+  .box p:last-child, .box ul:last-child { margin-bottom: 0; }
+  .translate {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 28px 0 8px;
+    background: var(--soft);
+  }
+  .translate h2 { border: 0; margin: 0 0 8px; padding: 0; font-size: 20px; }
+  .translate ul { list-style: none; padding: 0; margin: 10px 0 0; font-size: 15px; }
+  .translate li { margin: 3px 0; }
+  nav.toc {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 28px 0;
+  }
+  nav.toc strong { display: block; margin-bottom: 6px; }
+  nav.toc ol { columns: 2; column-gap: 32px; margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 15.5px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  th { background: var(--soft); font-weight: 700; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+  footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding: 20px 24px 40px; }
+  @media (max-width: 640px) {
+    header.cover h1 { font-size: 30px; }
+    nav.toc ol { columns: 1; }
+    td:first-child { white-space: normal; }
+  }
+  @media print {
+    body { font-size: 11.5pt; }
+    header.cover { background: #fff; color: var(--ink); padding: 0 0 18px; border-bottom: 3px solid var(--ink); }
+    header.cover p { color: var(--muted); }
+    header.cover .eyebrow { color: var(--accent); }
+    main, footer { padding-left: 0; padding-right: 0; }
+    h2 { break-before: auto; break-after: avoid; }
+    h3 { break-after: avoid; }
+    table, .box { break-inside: avoid; }
+    a { color: var(--ink); text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="wrap">
+    <div class="eyebrow">Guide utilisateur · Mac</div>
+    <h1>ConvertAISimple</h1>
+    <p>Convertissez vos vidéos et vos DVD en 1080P ou en 4K, avec la puce Apple de votre Mac : rapide, silencieux et économe en énergie.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="translate" lang="en" aria-label="Translation">
+    <h2>Read this guide in your language</h2>
+    <p lang="fr" style="margin:0">Ce guide est écrit en français. Votre navigateur peut le traduire en un clic :</p>
+    <ul>
+      <li><strong>Safari :</strong> View › Translation (or the translate icon in the address bar)</li>
+      <li><strong>Chrome / Edge :</strong> right-click the page › Translate</li>
+      <li lang="es"><strong>Español :</strong> clic derecho › Traducir</li>
+      <li lang="de"><strong>Deutsch :</strong> Rechtsklick › Übersetzen</li>
+      <li lang="it"><strong>Italiano :</strong> clic destro › Traduci</li>
+      <li lang="pt"><strong>Português :</strong> clique direito › Traduzir</li>
+      <li lang="ja"><strong>日本語：</strong>右クリック › 翻訳</li>
+      <li lang="zh"><strong>中文：</strong>右键 › 翻译</li>
+    </ul>
+  </section>
+
+  <nav class="toc" aria-label="Sommaire">
+    <strong>Sommaire</strong>
+    <ol>
+      <li><a href="#demarrer">Premiers pas</a></li>
+      <li><a href="#ajouter">Ajouter des vidéos</a></li>
+      <li><a href="#dvd">Convertir un DVD</a></li>
+      <li><a href="#reglages">Réglages principaux</a></li>
+      <li><a href="#modes">Modes de vitesse</a></li>
+      <li><a href="#ia">IA qualité et IA Animé</a></li>
+      <li><a href="#bandes">Bandes noires</a></li>
+      <li><a href="#formats">Formats vidéo</a></li>
+      <li><a href="#audio">Audio</a></li>
+      <li><a href="#hdr">HDR et couleurs</a></li>
+      <li><a href="#parametres">Paramètres de conversion</a></li>
+      <li><a href="#conversion">Pendant la conversion</a></li>
+      <li><a href="#assistant">Assistant IA</a></li>
+      <li><a href="#remote">Remote iPhone</a></li>
+      <li><a href="#prereglages">Préréglages et iCloud</a></li>
+      <li><a href="#raccourcis">Raccourcis clavier</a></li>
+      <li><a href="#depannage">Questions et dépannage</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="demarrer">1. Premiers pas</h2>
+  <p>ConvertAISimple convertit vos vidéos en 1080P (1920×1080) ou en 4K (3840×2160). L'encodage passe par le moteur vidéo de la puce Apple : votre Mac reste frais et silencieux, et la conversion est rapide.</p>
+  <p><strong>Configuration nécessaire :</strong> un Mac avec puce Apple (M1 ou plus récent). L'assistant IA sans internet nécessite en plus un Mac compatible avec Apple Intelligence, avec Apple Intelligence activé.</p>
+  <h3>Votre première conversion en 4 étapes</h3>
+  <ol>
+    <li>Glissez vos vidéos (ou un DVD) dans la fenêtre principale.</li>
+    <li>Choisissez <span class="ui">1080P</span> ou <span class="ui">4K</span>.</li>
+    <li>Choisissez un <span class="ui">Dossier de sortie</span>.</li>
+    <li>Cliquez sur <span class="ui">CONVERTIR</span>.</li>
+  </ol>
+  <div class="box"><p>Les réglages par défaut conviennent à la plupart des vidéos : format MP4 HEVC, bitrate <em>Auto</em> (petits fichiers, belle image) et images par seconde d'origine.</p></div>
+
+  <h2 id="ajouter">2. Ajouter des vidéos</h2>
+  <ul>
+    <li><strong>Glisser-déposer :</strong> déposez des vidéos, un dossier ou un DVD dans la zone « Glissez vos vidéos ou un DVD ici ».</li>
+    <li><strong>Menu Fichier :</strong> <span class="ui">Ajouter des vidéos…</span>, <span class="ui">Ajouter un dossier…</span> ou <span class="ui">Ajouter un DVD…</span>.</li>
+    <li><strong>Formats lus :</strong> MP4, MOV, MKV, AVI, VOB, M2TS et la plupart des formats courants.</li>
+  </ul>
+  <p>Chaque vidéo de la liste affiche sa résolution, sa durée et ses images par seconde. Le bouton de lecture ouvre le <span class="ui">Lecteur vidéo</span> pour vérifier une vidéo avant de la convertir. <span class="ui">Vider la liste vidéo</span> efface toute la liste.</p>
+
+  <h2 id="dvd">3. Convertir un DVD</h2>
+  <p>Insérez le DVD, puis choisissez <span class="ui">Ajouter un DVD…</span> et sélectionnez le disque (dans le Finder, sous « Emplacements ») ou son dossier <em>VIDEO_TS</em>. La fenêtre <span class="ui">Convertir un DVD</span> s'ouvre.</p>
+  <h3>Contenu à importer</h3>
+  <ul>
+    <li><strong>Le film :</strong> le titre principal est choisi automatiquement.</li>
+    <li><strong>Épisodes (série) :</strong> un fichier par épisode. Donnez à chacun son nom, par exemple « Tintin et les Picaros » et « Tintin au Tibet ». Si les épisodes sont rangés en chapitres, utilisez <span class="ui">découper en chapitres</span>, puis cochez <span class="ui">Suite de l'épisode précédent</span> pour regrouper les chapitres d'un même épisode.</li>
+    <li><strong>Toutes les vidéos :</strong> tous les titres du disque, bonus compris.</li>
+  </ul>
+  <h3>Pistes</h3>
+  <ul>
+    <li><strong>Audio :</strong> la piste principale, une langue précise ou toutes les pistes.</li>
+    <li><strong>Sous-titres :</strong> en MP4, ils sont incrustés dans l'image ; en MKV, ils restent une piste que l'on peut activer ou non.</li>
+  </ul>
+  <p>Le DVD est converti en 1080P ou en 4K : désentrelacement, format 16:9 corrigé, couleurs adaptées à la HD.</p>
+  <div class="box warn">
+    <p><strong>DVD pris en charge :</strong> les DVD non protégés (vidéos personnelles, caméscope, DVD gravés). Les DVD du commerce protégés contre la copie ne sont pas déchiffrés par l'application.</p>
+    <p><strong>DVD rayé :</strong> les passages abîmés sont ignorés (petite saccade) au lieu d'arrêter la conversion. Si le lecteur n'arrive pas du tout à lire une partie du disque, nettoyez-le ou essayez un autre lecteur.</p>
+  </div>
+
+  <h2 id="reglages">4. Réglages principaux</h2>
+  <table>
+    <tr><th>Réglage</th><th>Rôle</th></tr>
+    <tr><td>1080P / 4K</td><td>Taille de la vidéo convertie : 1920×1080 ou 3840×2160.</td></tr>
+    <tr><td>Format</td><td>Type de fichier et codec vidéo (voir <a href="#formats">Formats vidéo</a>).</td></tr>
+    <tr><td>FPS cible</td><td>Images par seconde : <em>Original</em> (conseillé), 24, 25, 30 ou 60.</td></tr>
+    <tr><td>Bitrate vidéo</td><td>Quantité de données par seconde. <em>Auto</em> choisit un débit adapté à la source et au mode. Plus le bitrate est élevé, plus le fichier est gros.</td></tr>
+    <tr><td>Dossier de sortie</td><td>Où enregistrer les vidéos converties. Les dossiers enregistrés peuvent être glissés sur une vidéo pour lui donner une sortie dédiée.</td></tr>
+    <tr><td>Vidéos par lot</td><td>Nombre de vidéos converties en même temps.</td></tr>
+  </table>
+
+  <h2 id="modes">5. Modes de vitesse</h2>
+  <p>Menu <span class="ui">Fenêtres › Réglages…</span>, onglet <span class="ui">PUISSANCE</span>.</p>
+  <table>
+    <tr><th>Mode</th><th>Pour quoi faire</th></tr>
+    <tr><td>Normal</td><td>Meilleure qualité : agrandissement très fin, désentrelacement et réduction du bruit pour les DVD.</td></tr>
+    <tr><td>Rapide</td><td>Très bonne qualité, fichiers compacts.</td></tr>
+    <tr><td>Super Rapide</td><td>Qualité standard, idéal pour des copies de visionnage.</td></tr>
+    <tr><td>Ultra Rapide</td><td>Priorité à la vitesse et à l'économie d'énergie : filtres minimum, 30 images/s maximum pour les sources à 50/60 images/s, IA désactivée.</td></tr>
+  </table>
+  <p><span class="ui">Enregistrer ce préréglage</span> mémorise vos réglages pour le mode choisi ; <span class="ui">Réinitialiser</span> revient aux réglages d'origine. L'onglet <span class="ui">THÈME</span> change l'apparence : Clair, Sombre, Liquid Glass ou Teinté.</p>
+
+  <h2 id="ia">6. IA qualité et IA qualité (Animé)</h2>
+  <p>Ces deux boutons remasterisent toute la vidéo. Un seul peut être actif à la fois.</p>
+  <ul>
+    <li><strong>IA QUALITÉ</strong> (films, séries, vidéos personnelles) : retire les blocs de compression et le bruit, lisse les dégradés, renforce la netteté sans halo, ravive légèrement le contraste et les couleurs. Le son est aussi retravaillé : volume homogène, grondements retirés.</li>
+    <li><strong>IA QUALITÉ (ANIMÉ)</strong> (dessins animés, animés japonais) : aplats lissés, dégradés sans escalier, traits nets, couleurs ravivées. Sur les DVD NTSC, retrouve les 24 images/s d'origine pour une image plus nette et plus fluide.</li>
+  </ul>
+  <div class="box"><p>L'IA est désactivée en mode Ultra Rapide. Si l'audio est en <em>Passthrough</em> (copié tel quel), le son n'est pas retravaillé.</p></div>
+
+  <h2 id="bandes">7. Supprimer les bandes noires</h2>
+  <p>Le bouton <span class="ui">SUPPRIMER LES BANDES NOIRES</span> retire les bandes noires sur les côtés, en haut et en bas. L'image n'est jamais déformée. Il fonctionne dans tous les modes. Deux façons de faire, à choisir dans les <a href="#parametres">Paramètres de conversion</a> :</p>
+  <ul>
+    <li><strong>Supprimer (image entière) :</strong> les bandes disparaissent et toute l'image est gardée, dans ses proportions d'origine. Exemples : un film au format cinéma donne 1920×804, une vidéo 4:3 donne 1440×1080.</li>
+    <li><strong>Remplir l'écran (zoom) :</strong> l'image est agrandie jusqu'à remplir tout l'écran 16:9 ; ce qui dépasse sur les bords est coupé. L'application vous prévient si plus de 20 % de l'image est coupée.</li>
+  </ul>
+  <p>Bouton désactivé : la vidéo fait exactement 1920×1080 ou 3840×2160, avec des bandes noires si sa forme n'est pas 16:9. Si vous incrustez des sous-titres de DVD, les bandes sont gardées pour ne pas couper les sous-titres.</p>
+
+  <h2 id="formats">8. Formats vidéo</h2>
+  <table>
+    <tr><th>Format</th><th>Conseillé pour</th></tr>
+    <tr><td>MP4 HEVC</td><td>Le meilleur choix : petits fichiers, lus par les appareils Apple, les téléviseurs récents et VLC.</td></tr>
+    <tr><td>MP4 H.264</td><td>Compatibilité maximale (vieux téléviseurs, navigateurs, Windows). Fichiers un peu plus gros.</td></tr>
+    <tr><td>MP4 MPEG-4 (Part 2)</td><td>Vieux téléphones, baladeurs, cadres photo.</td></tr>
+    <tr><td>MKV HEVC / H.264</td><td>Plex, Infuse, Kodi, VLC. Garde plusieurs pistes audio et les sous-titres activables.</td></tr>
+    <tr><td>MOV HEVC / H.264</td><td>Format Apple : QuickTime, Photos, iMovie.</td></tr>
+    <tr><td>MOV ProRes 422</td><td>Montage (Final Cut Pro, Premiere, DaVinci). Qualité maximale, fichiers très volumineux (environ 65 Go par heure en 1080P).</td></tr>
+    <tr><td>AVI H.264</td><td>Lecteurs qui n'acceptent que l'AVI.</td></tr>
+    <tr><td>AVI MPEG-4 (Xvid)</td><td>Vieux lecteurs DVD de salon et téléviseurs DivX.</td></tr>
+    <tr><td>TS H.264</td><td>Téléviseurs et box qui lisent les clés USB et refusent le MP4.</td></tr>
+  </table>
+  <p>Le HEVC donne des fichiers environ 2 fois plus petits que le H.264, à qualité égale.</p>
+
+  <h2 id="audio">9. Audio</h2>
+  <table>
+    <tr><th>Réglage</th><th>Choix</th></tr>
+    <tr><td>Format audio</td><td>AAC (conseillé), MP3, FLAC (sans perte), WAV (non compressé).</td></tr>
+    <tr><td>Passthrough audio</td><td>Copie le son de la source sans le modifier.</td></tr>
+    <tr><td>Canaux</td><td>Mono, 2.0 (stéréo), 2.1, 5.1, 5.2, 7.1, 7.2.</td></tr>
+    <tr><td>Fréquence</td><td>44 100 Hz (CD), 48 000 Hz (vidéo, conseillé), 96 000 Hz.</td></tr>
+    <tr><td>Bitrate audio</td><td>128 à 320 kbps en stéréo. Un minimum est appliqué en multicanal (256 kbps en 2.1, 384 en 5.1, 512 en 7.1).</td></tr>
+  </table>
+  <ul>
+    <li><strong>Élargissement :</strong> une source stéréo convertie en 5.1 ou 7.1 voit ses canaux arrière recréés.</li>
+    <li><strong>5.2 et 7.2 :</strong> comme sur les Blu-ray, le fichier contient un canal de basses que votre ampli-tuner envoie à vos deux caissons. L'audio est enregistré en 5.1 ou 7.1.</li>
+    <li><strong>Adaptations automatiques :</strong>
+      <ul>
+        <li>En MOV, le FLAC devient ALAC (Apple Lossless, aussi sans perte).</li>
+        <li>En TS, le FLAC et le WAV deviennent AAC.</li>
+        <li>En AVI, l'audio est limité au 5.1.</li>
+      </ul>
+      Un message vous l'indique.</li>
+  </ul>
+
+  <h2 id="hdr">10. HDR et couleurs</h2>
+  <ul>
+    <li><strong>HDR :</strong> SDR, HDR (HLG), HDR10, HDR10+ et Dolby Vision en HEVC (MP4 ou MKV) ; SDR, HLG et HDR10 en MOV HEVC et ProRes. Le HDR n'est conservé que pour les vidéos déjà en HDR (pas de faux HDR).</li>
+    <li>Une vidéo HDR convertie dans un format sans HDR passe automatiquement en SDR, avec des couleurs justes.</li>
+    <li><strong>HDR10+ et Dolby Vision :</strong> leurs informations dynamiques ne sont gardées que si la vidéo est copiée telle quelle (même résolution que la source, images par seconde <em>Original</em>, IA désactivée).</li>
+    <li><strong>Couleur 4:2:0 / 4:2:2 :</strong> 4:2:0 est lu partout (conseillé). Le 4:2:2 sert au montage et à l'archivage. Si ce Mac ne peut pas l'encoder, la vidéo est automatiquement encodée en 4:2:0.</li>
+  </ul>
+
+  <h2 id="parametres">11. Paramètres de conversion</h2>
+  <p>Menu <span class="ui">Fenêtres › Paramètres de conversion…</span> : tous les réglages vidéo et audio, plus :</p>
+  <ul>
+    <li><strong>Supprimer les bandes noires</strong> et sa façon de faire (Supprimer ou Remplir l'écran).</li>
+    <li><strong>Priorité à la puce graphique (GPU) :</strong> agrandissement et conversions de couleurs par la puce graphique, plus rapides, le processeur reste libre. Désactivez-la pour l'agrandissement le plus fin par le processeur en mode Normal.</li>
+    <li><strong>Économie d'énergie :</strong> utilise surtout les cœurs basse consommation : le Mac reste frais et silencieux. Désactivez-la pour aller un peu plus vite sur secteur.</li>
+  </ul>
+
+  <h2 id="conversion">12. Pendant la conversion</h2>
+  <ul>
+    <li><strong>Progression :</strong> la fenêtre <span class="ui">Conversion en cours</span> affiche la progression, le temps écoulé et le temps restant.</li>
+    <li><strong>Taille :</strong> la taille déjà écrite s'affiche, ainsi que la taille prévue, connue dès le départ (par exemple « 1,2 Go sur ≈ 3,24 Go »).</li>
+    <li><strong>Plusieurs vidéos en même temps :</strong> chaque vidéo a sa barre et son étape (Analyse de la source, Détection des bandes noires, Conversion…).</li>
+    <li><strong>Finalisation… :</strong> à la fin, le fichier est refermé, ce qui peut prendre quelques secondes.</li>
+    <li><strong>Erreur sur une vidéo :</strong> les autres continuent. Le détail des erreurs s'affiche à la fin.</li>
+    <li><strong>Espace disque :</strong> l'application vérifie l'espace libre avant de commencer et vous prévient s'il manque de la place.</li>
+    <li><strong>Disque dur, lecteur DVD, disque réseau :</strong> une seule vidéo est lue à la fois sur ce disque, pour éviter les allers-retours de la tête de lecture. Les vidéos sur SSD se convertissent en parallèle.</li>
+  </ul>
+  <p>Pour arrêter : <span class="ui">Annuler</span> ou <kbd>⌘ .</kbd></p>
+
+  <h2 id="assistant">13. Assistant IA</h2>
+  <p>Menu <span class="ui">Fenêtres › Assistant IA…</span> (<kbd>⇧⌘A</kbd>). Choisissez l'assistant :</p>
+  <ul>
+    <li><strong>IA locale (sans internet) :</strong> tout reste sur votre Mac. Elle comprend des demandes comme « règle 1080P Super Rapide, HEVC, 30 fps et 20 000 kbps » et propose un bouton <span class="ui">Appliquer</span>.</li>
+    <li><strong>IA Gemini (en ligne) :</strong> réponses plus détaillées, avec des conseils vérifiés sur internet. Elle ne fonctionne qu'après votre accord.</li>
+  </ul>
+  <div class="box">
+    <p><strong>Données envoyées à Google par l'assistant en ligne :</strong> le texte de vos questions, vos réglages de conversion et les caractéristiques techniques des vidéos de la liste (résolution, images par seconde, durée).</p>
+    <p>Aucune vidéo, aucun nom de fichier et aucun dossier n'est envoyé.</p>
+    <p>Pour arrêter, écrivez « désactiver le mode en ligne » dans l'assistant.</p>
+  </div>
+
+  <h2 id="remote">14. Remote iPhone</h2>
+  <p>Pilotez les conversions du Mac depuis votre iPhone, sur le même réseau local.</p>
+  <ol>
+    <li>Sur le Mac, ouvrez <span class="ui">Remote iPhone/Mac</span> : un code d'appairage à 4 chiffres s'affiche.</li>
+    <li>Sur l'iPhone, ouvrez Remote dans ConvertAISimple et saisissez ce code.</li>
+    <li>Une fois connecté, l'iPhone peut :
+      <ul>
+        <li>ajouter des vidéos, un dossier ou un DVD ;</li>
+        <li>choisir le dossier de sortie ;</li>
+        <li>changer le mode et le nombre de vidéos par lot ;</li>
+        <li>choisir 1080P ou 4K ;</li>
+        <li>lancer ou annuler la conversion.</li>
+      </ul>
+    </li>
+  </ol>
+  <p>Sans le code affiché sur le Mac, aucun appareil ne peut le piloter.</p>
+
+  <h2 id="prereglages">15. Préréglages et iCloud</h2>
+  <ul>
+    <li><span class="ui">Enregistrer préréglage vidéo + audio</span> crée un préréglage nommé. Glissez-le sur une vidéo pour lui appliquer ces réglages.</li>
+    <li>Les préréglages et réglages se synchronisent avec iCloud entre vos appareils. <span class="ui">Synchroniser iCloud</span> force la synchronisation.</li>
+    <li>Le choix 1080P / 4K n'est jamais écrasé par un autre appareil.</li>
+  </ul>
+
+  <h2 id="raccourcis">16. Raccourcis clavier</h2>
+  <table>
+    <tr><th>Raccourci</th><th>Action</th></tr>
+    <tr><td><kbd>⌘O</kbd></td><td>Ajouter des vidéos</td></tr>
+    <tr><td><kbd>⇧⌘O</kbd></td><td>Ajouter un dossier</td></tr>
+    <tr><td><kbd>⇧⌘D</kbd></td><td>Ajouter un DVD</td></tr>
+    <tr><td><kbd>⌘↩</kbd></td><td>Lancer la conversion</td></tr>
+    <tr><td><kbd>⌘ .</kbd></td><td>Annuler la conversion</td></tr>
+    <tr><td><kbd>⌘I</kbd></td><td>Activer ou désactiver IA qualité</td></tr>
+    <tr><td><kbd>⌘1</kbd> / <kbd>⌘4</kbd></td><td>Préréglage 1080P / 4K</td></tr>
+    <tr><td><kbd>⌘⌫</kbd></td><td>Vider la liste vidéo</td></tr>
+    <tr><td><kbd>⌘,</kbd></td><td>Réglages</td></tr>
+    <tr><td><kbd>⇧⌘A</kbd></td><td>Assistant IA</td></tr>
+    <tr><td><kbd>⇧⌘S</kbd></td><td>Paramètres de conversion</td></tr>
+    <tr><td><kbd>⇧⌘U</kbd></td><td>Chercher les mises à jour</td></tr>
+    <tr><td><kbd>⇧⌘C</kbd></td><td>Contacter le développeur</td></tr>
+  </table>
+  <p>Ce sont les raccourcis par défaut.</p>
+
+  <h2 id="depannage">17. Questions et dépannage</h2>
+  <h3>Une vidéo reste à 0 %</h3>
+  <p>Regardez l'étape affichée sous sa barre. Pendant l'analyse ou la détection des bandes noires, le pourcentage ne bouge pas encore. Si la durée de la vidéo est inconnue, l'étape indique la quantité de vidéo déjà traitée.</p>
+  <h3>Une vidéo passe d'un coup à 100 %</h3>
+  <p>Elle s'est probablement arrêtée sur une erreur. Les autres vidéos continuent, et le détail de l'erreur s'affiche à la fin.</p>
+  <h3>La conversion reste à 99 %</h3>
+  <p>« Finalisation… » : le fichier est en train d'être refermé. Attendez quelques instants.</p>
+  <h3>« Espace disque insuffisant »</h3>
+  <p>Libérez de la place, choisissez un autre dossier de sortie ou baissez le bitrate.</p>
+  <h3>Le DVD n'est pas reconnu</h3>
+  <p>Sélectionnez le disque lui-même (dans le Finder, sous « Emplacements ») ou son dossier VIDEO_TS. Les DVD du commerce protégés ne sont pas pris en charge.</p>
+  <h3>Le fichier ne se lit pas sur mon téléviseur</h3>
+  <p>Essayez, dans cet ordre :</p>
+  <ol>
+    <li>MP4 H.264 ;</li>
+    <li>TS H.264 ;</li>
+    <li>pour un très vieux lecteur, AVI MPEG-4 (Xvid) en 1080P.</li>
+  </ol>
+  <h3>Mes fichiers sont trop gros</h3>
+  <p>Gardez le bitrate sur <em>Auto</em>, choisissez HEVC plutôt que H.264, ou le mode Rapide / Super Rapide. Évitez ProRes, WAV et FLAC si la place compte.</p>
+
+  <h2 id="contact">18. Contact</h2>
+  <p>Une question, un bug, une idée ? Dans l'application : menu <span class="ui">Aide › Contacter le développeur</span>. Vos retours servent directement à améliorer les prochaines versions.</p>
+  <p>Pour obtenir la dernière version : <span class="ui">Aide › Chercher les mises à jour</span>.</p>
+
+</main>
+
+<footer>
+  <div class="wrap">ConvertAISimple · Guide utilisateur Mac · © 2026 GASTON Antoine. Apple, Mac, macOS, iPhone, iCloud, QuickTime, Final Cut Pro et ProRes sont des marques d'Apple Inc.</div>
+</footer>
+
+</body>
+</html>
